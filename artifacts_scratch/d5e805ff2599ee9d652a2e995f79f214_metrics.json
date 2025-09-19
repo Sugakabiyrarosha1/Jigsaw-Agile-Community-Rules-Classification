@@ -1,0 +1,81 @@
+{
+  "timestamp": "2025-09-19T05:18:40.291012+00:00",
+  "params": {
+    "vocab_size": 30000,
+    "use_batchnorm": true,
+    "pooling": "max",
+    "optimizer": "adamw",
+    "grad_clip": 1.0,
+    "scheduler": "none",
+    "class_weighting": "none",
+    "seed": 42,
+    "activation": "relu",
+    "residual": false,
+    "seq_len": 256,
+    "emb_dim": 128,
+    "conv_blocks": 2,
+    "channels_start": 128,
+    "channel_growth": "x1.5",
+    "kernel_sizes": "3-5-7",
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "epochs": 8,
+    "dropout": 0.2,
+    "weight_decay": 0.0002,
+    "label_smoothing": 0.0,
+    "loss_fn": "bce_logits"
+  },
+  "best_auc": 0.7844902912621359,
+  "best_acc": 0.6847290640394089,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.2080808281898499,
+      "train_acc": 0.5428219346888478,
+      "val_auc": 0.7492718446601943,
+      "val_acc": 0.6600985221674877
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.6206132345474683,
+      "train_acc": 0.685150955021565,
+      "val_auc": 0.7658009708737865,
+      "val_acc": 0.6576354679802956
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.4443833759197822,
+      "train_acc": 0.7948243992606284,
+      "val_auc": 0.7644417475728156,
+      "val_acc": 0.6970443349753694
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.28952546188464534,
+      "train_acc": 0.88909426987061,
+      "val_auc": 0.7844902912621359,
+      "val_acc": 0.6847290640394089
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.2386646193380539,
+      "train_acc": 0.9155884165126309,
+      "val_auc": 0.7537135922330097,
+      "val_acc": 0.6527093596059114
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.18997677730826232,
+      "train_acc": 0.9371534195933456,
+      "val_auc": 0.766868932038835,
+      "val_acc": 0.6724137931034483
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.16919656799962887,
+      "train_acc": 0.9439309919901417,
+      "val_auc": 0.7672330097087379,
+      "val_acc": 0.6822660098522167
+    }
+  ]
+}

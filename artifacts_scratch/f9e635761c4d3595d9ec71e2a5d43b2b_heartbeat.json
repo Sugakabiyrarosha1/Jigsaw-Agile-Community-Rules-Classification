@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-09-19T05:19:21.917799+00:00",
+  "key": "f9e635761c4d3595d9ec71e2a5d43b2b",
+  "params": {
+    "vocab_size": 30000,
+    "use_batchnorm": true,
+    "pooling": "max",
+    "optimizer": "adamw",
+    "grad_clip": 1.0,
+    "scheduler": "none",
+    "class_weighting": "none",
+    "seed": 42,
+    "activation": "relu",
+    "residual": false,
+    "seq_len": 256,
+    "emb_dim": 192,
+    "conv_blocks": 2,
+    "channels_start": 128,
+    "channel_growth": "x1.5",
+    "kernel_sizes": "3-5-7",
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "epochs": 8,
+    "dropout": 0.25,
+    "weight_decay": 0.0002,
+    "label_smoothing": 0.0,
+    "loss_fn": "bce_logits"
+  },
+  "best_auc": -1.0,
+  "best_acc": 0.0,
+  "interrupted": true,
+  "history": []
+}
